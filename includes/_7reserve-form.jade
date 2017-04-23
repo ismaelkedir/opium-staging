@@ -1,0 +1,40 @@
+.container-fluid.reserve-title.text-center
+   h1 Reservation
+
+.container#reservation-content
+   .col-md-6.col-md-offset-3
+      p.reserve-instr.text-center Thank you for choosing to reserve a table at our restaurant. Choose your date and time and enter your information. If you have any questions, please call 
+         strong +251 96 789 2299 
+         | or email us at 
+         a(href="mailto:contact@opiumaddis.com") contact@opiumaddis.com
+      br
+      form(method="post" id="reserve-form")
+         .form-group
+            label Your Contact Info
+            input(type="hidden" name="_subject" value="New Reservation from Opium Website.")
+            input.form-control.input-lg(type='text' id="name" required="true" name='Name' placeholder='Name')
+         .form-group
+            input.form-control.input-lg(type='tel' id="phone" required="true" name='Phone Number' placeholder='Phone')
+         .form-group
+            input.form-control.input-lg(type='email' id="email" required="true" name='Email Address' placeholder='Email Address')
+            input(type="text" style="display:none" name="_gotcha")
+         .form-group
+            input.form-control.input-lg(type='number' id="people" name='Number of People' placeholder='People' required="true" min='1' max='20')
+         .form-group
+            label When would you like to come?
+            br
+            br
+            .form-group
+               label(for='date') Pick a Date
+               input.form-control.input-lg(type='date' id="date" name='Date' required="true")
+               
+               label(for='date') Pick a Time
+               //- input.form-control.input-lg(type='time' id="time" name='Time' required="true")
+               input.timepicker.text-center.input-lg.form-control(type="text" name='Time' required="true")
+         button.btn.obtn-fill(type="submit") Book my table 
+         br
+         br
+         span.text-center.takeaway &nbsp;&nbsp; Ordering a Takeaway? Reserve through 
+            a.extLink(href="https://deliveraddis.com/restaurants/opium/" target='_blank') Deliver Addis
+            |&nbsp;or&nbsp;
+            a.extLink(target="_blank" href="http://www.telalakidelivery.com/index.php/menu/index/23") Telalaki Delivery

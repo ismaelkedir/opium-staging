@@ -1,0 +1,59 @@
+.recomendations
+   margin: 50px auto
+   .dishes
+      list-style: none
+      padding: 0
+      background-color: white
+      a
+         text-decoration: none
+         color: inherit
+      .dish
+         opacity: 0
+         background-color: #fff
+         border-bottom: 1px solid #ccc
+         padding: 10px
+         position: relative
+         // max-width: 340px
+         margin: 10px auto
+         .dish-img
+            max-height: 225px
+            width: 100%
+            overflow: hidden
+            img
+               min-width: 100%
+               height: auto
+               transition: all .2s ease-in-out
+               &:hover
+                  transform: scale(1.1)
+         .dish-desc
+            padding: 10px
+            position: relative
+            .dish-name
+               position: relative
+               text-transform: uppercase
+               margin: auto
+            .dish-price
+               // position: absolute
+               right: 0
+               margin-right: 10px
+               font-size: 20px
+               font-weight: bold
+               color: $color-primary
+            .other-details
+               font-weight: 600
+               // margin: 5px
+               .dish-options
+                  // position: relative
+                  height: 80px
+            .dish-badge
+               position: absolute
+               right: 0
+               background-color: $color-primary
+               padding: 2px 10px
+               margin: 0px 0px 10px 0
+               color: white
+.lightbox .lb-outerContainer , .lightbox .lb-image
+      border-radius: 0
+
+.lb-data .lb-caption
+   font-size: 24px

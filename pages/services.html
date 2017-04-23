@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Reservation - Opium Restaurant</title>
+    <title>Services - Opium Restaurant</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,40 +24,48 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid reserve-title text-center">
-      <h1>Reservation</h1>
+    <div class="container-fluid services-title text-center">
+      <h1>SERVICES</h1>
+      <p>Full List And Pricing Coming Soon</p>
     </div>
     <div class="container" id="reservation-content">
-      <div class="col-md-6 col-md-offset-3">
-        <p class="reserve-instr text-center">Thank you for choosing to reserve a table at our restaurant. Choose your date and time and enter your information. If you have any questions, please call <strong>+251 96 789 2299 </strong>or email us at <a href="mailto:contact@opiumaddis.com">contact@opiumaddis.com</a></p><br>
-        <form method="post" id="reserve-form">
-          <div class="form-group">
-            <label>Your Contact Info</label>
-            <input type="hidden" name="_subject" value="New Reservation from Opium Website.">
-            <input class="form-control input-lg" type="text" id="name" required="true" name="Name" placeholder="Name">
-          </div>
-          <div class="form-group">
-            <input class="form-control input-lg" type="tel" id="phone" required="true" name="Phone Number" placeholder="Phone">
-          </div>
-          <div class="form-group">
-            <input class="form-control input-lg" type="email" id="email" required="true" name="Email Address" placeholder="Email Address">
-            <input type="text" style="display:none;" name="_gotcha">
-          </div>
-          <div class="form-group">
-            <input class="form-control input-lg" type="number" id="people" name="Number of People" placeholder="People" required="true" min="1" max="20">
-          </div>
-          <div class="form-group">
-            <label>When would you like to come?</label><br><br>
-            <div class="form-group">
-              <label for="date">Pick a Date</label>
-              <input class="form-control input-lg" type="date" id="date" name="Date" required="true">
-              <label for="date">Pick a Time</label>
-              <input class="timepicker text-center input-lg form-control" type="text" name="Time" required="true">
-            </div>
-          </div>
-          <button class="btn obtn-fill" type="submit">Book my table </button><br><br><span class="text-center takeaway">&nbsp;&nbsp; Ordering a Takeaway? Reserve through <a class="extLink" href="https://deliveraddis.com/restaurants/opium/" target="_blank">Deliver Addis</a>&nbsp;or&nbsp;<a class="extLink" target="_blank" href="http://www.telalakidelivery.com/index.php/menu/index/23">Telalaki Delivery</a></span>
-        </form>
-      </div>
+      <h3 class="text-center">1. Pre-marinated meats</h3>
+      <hr>
+      <div class="container-fluid">
+        <div class="col-md-4 text-center">
+          <h1>Beef</h1>
+          <h4>350 Birr</h4>
+        </div>
+        <div class="col-md-4 text-center">
+          <h1>Chicken</h1>
+          <h4>350 Birr</h4>
+        </div>
+        <div class="col-md-4 text-center">
+          <h1>Pork</h1>
+          <h4>550 Birr</h4>
+        </div>
+      </div><br><br>
+      <h3 class="text-center">2. Private events</h3>
+      <p class="text-center">Prices are calculated based on quantity of items including VAT, labor and service fee.</p>
+      <hr>
+      <div class="container-fluid">
+        <div class="col-md-6 text-center"><i class="fa fa-birthday-cake fa-4x" aria-hidden="true">&nbsp;</i>
+          <h1>Birthday parties</h1>
+          <h3><i class="fa fa-check" aria-hidden="true">&nbsp; </i>Menu item samplers, water and cake.</h3>
+          <h3><i class="fa fa-check" aria-hidden="true">&nbsp; </i>Restaurant hosting</h3>
+          <h3><i class="fa fa-check" aria-hidden="true">&nbsp; </i>In house hosting
+            <p>22% service charge</p>
+          </h3>
+          <h3><i class="fa fa-check" aria-hidden="true">&nbsp; </i>Client's location
+            <p>Please contact us directly.</p>
+          </h3><br>
+          <hr>
+        </div>
+        <div class="col-md-6 text-center"><i class="fa fa-glass fa-4x" aria-hidden="true">&nbsp;</i>
+          <h2>Corporate gatherings</h2>
+          <p>Please contact us directly.</p>
+        </div>
+      </div><br>
     </div>
     <footer>
       <div class="container-fluid" id="contact-section">

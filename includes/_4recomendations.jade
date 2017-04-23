@@ -1,0 +1,26 @@
+mixin dish-desc(name, price, options, badge)
+   .dish-desc
+      h4
+         span.dish-name #{name}
+      span.dish-price #{price}ETB
+      .other-details 
+         p.dish-options #{options} 
+         span.dish-badge #{badge}
+
+.container.recomendations
+   ul.dishes
+      li.dish.col-md-4
+         a(href="./images/DJI_0191_reversed_big.jpg" data-lightbox="dishes" data-title="Pesto Chicken Sandwich - 170 (Recomended)")
+            .dish-img
+                  img.img-responsive(src="./images/DJI_0191_thumb.jpg", alt="image")
+            +dish-desc("Pesto Chicken Sandwich", 170, "Grilled chicken breast with house made pesto made with fresh basil, with fresh tomatoes, provolone cheese on a fresh baked bun.", "Recomended")
+      li.dish.col-md-4
+         a(href="./images/DJI_0220_big.jpg" data-lightbox="dishes" data-title="Taco - 168 (Opium Special)")
+            .dish-img
+                  img.img-responsive(src="./images/DJI_0220_thumb.jpg", alt="image")
+            +dish-desc("Chicken Tacos", 168, "Shredded chicken on a handmade whole wheat flour tortilla with black beans, house made salsa and guacamole.", "Opium Special")
+      li.dish.col-md-4
+         a(href="./images/DJI_0293_big.jpg" data-lightbox="dishes" data-title="Opium Philly Cheesesteak - 180 (Opium Special)")
+            .dish-img
+                  img.img-responsive(src="./images/DJI_0293_thumb.jpg", alt="image")
+            +dish-desc("Opium Philly Cheesesteak", 180, "Our take on an American classic. The Opium Philly Cheese Steak comes with the finest cuts of seared beef, grilled onions and peppers, melted cheese on fresh a fresh baked roll.", "Opium Special")
