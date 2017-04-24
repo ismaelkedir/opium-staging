@@ -1,0 +1,28 @@
+.carousel.slide(id="myCarousel" data-ride="carousel")
+   ol.carousel-indicators
+      li(data-target="#myCarousel" data-slide-to="0" class="active")
+      li(data-target="#myCarousel" data-slide-to="1")
+      li(data-target="#myCarousel" data-slide-to="2")
+   .carousel-inner
+      .item.active
+         img.animated.fadeIn(src="./images/DJI_0191_big.jpg", alt="pictureSlide1")
+         .container
+            .carousel-caption
+               h1.animated.fadeInDown Welcome To Opium Restaurant
+               p.animated.fadeInUp We Bring Variety To Your Plate!
+      .item
+         img.animated.fadeIn(src="./images/DJI_0218_big.jpg", alt="pictureSlide2")
+         .container
+            .carousel-caption
+               h1.animated.fadeInDown Eat Well & Spend Less
+      .item
+         img.animated.fadeIn(src="./images/DJI_0207_big.jpg", alt="pictureSlide3")
+         .container
+            .carousel-caption
+               h1.animated.fadeInDown The Secret Is In The Process
+               //- a.btn.obtn-fill(href="/pages/reservation.html") Book a Table Now
+               
+      a.left.carousel-control(href="#myCarousel" role="button" data-slide="prev")
+         span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+      a.right.carousel-control(href="#myCarousel" role="button" data-slide="next")
+         span.glyphicon.glyphicon-chevron-right(aria-hidden="true")

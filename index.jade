@@ -1,0 +1,36 @@
+doctype
+html(lang='en')
+   head
+      title Opium Restaurant
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      meta(name='description', content='Opium Addis Restaurant by Chef Mekbib. The pleasure of variety on your plate. we source the freshest ingredients for our Menu and all of our sauces are handmade each day.')
+      meta(name='keywords', content='Opium Addis Restaurant')
+
+      //- ----- link website ----- //
+      link(rel='icon' href='./favicon.ico' type='image/x-icon')
+
+      //- ----- CSS Files ----- //
+      link(rel='stylesheet', href='./styles/style.css')
+   body
+      include ./includes/_0navbar.jade
+      include ./includes/_1carousel.jade
+      include ./includes/_2about.jade
+      include ./includes/_3recomend-title.jade
+      include ./includes/_4recomendations.jade
+      include ./includes/_5menu.jade
+      include ./includes/_6our-chef.jade
+      include ./includes/_7google-map.jade
+      include ./includes/_8footer.jade
+
+
+      //- script(type='text/javascript' src='js/jquery.min.js')
+      script(src='http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+
+      //- script(type='text/javascript' src='js/bootstrap.min.js')
+      script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+      
+      script(type='text/javascript', src='js/smoothscroll.js')
+      script(type='text/javascript', src='js/lightbox.min.js')
+      script(type='text/javascript', src='js/main-dist.js')

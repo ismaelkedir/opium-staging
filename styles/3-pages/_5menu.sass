@@ -1,0 +1,38 @@
+.menu-title
+   @extend .recomend-section
+   background-image: url(../images/DJI_0402_small.jpg)
+
+#menu-section
+   margin: 30px auto
+   .menu
+      margin: 60px auto
+      opacity: 0
+      .menu-item
+         position: relative
+         .menu_title
+            background-color: #fff
+            z-index: 2
+            position: relative
+            // font-size: 16px
+            font-weight: bold
+         .menu_dots
+            position: absolute
+            top: 14px
+            left: 0
+            right: 0
+            z-index: 1
+            height: 3px
+            background-image: radial-gradient(circle closest-side,#ccc 90%,#fff 10%)
+            background-position: bottom
+            background-size: 6px 3px
+            background-repeat: repeat-x
+         .menu_price
+            position: absolute
+            color: $color-primary
+            right: 0
+            z-index: 2
+            font-weight: bold
+            background-color: #fff
+      .options
+         font-weight: 600
+         font-size: 16px

@@ -1,0 +1,51 @@
+.carousel
+  // margin-bottom: 60px
+  vertical-align: middle
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption
+  z-index: 10
+  top: 50%
+
+/* Declare heights because of positioning of img element */
+.carousel .item
+  height: 100vh
+  background-color: black
+
+.carousel-inner > .item > img
+  min-width: 100%
+  height: auto
+
+@media(min-width: 768px)
+   .carousel
+      height: 100vh
+
+   .carousel-caption
+      top: 40%
+      h1
+         font-size: 48px
+
+   .carousel-caption p
+       margin-bottom: 20px
+       font-size: 21px
+       line-height: 1.4
+
+   .carousel-inner > .item > img
+      height: auto
+
+.carousel-indicators > li
+   border-radius: 0
+   border: 2px solid white
+   &.active
+      background-color: $color-primary
+      margin: 0
+.carousel-control
+   .fa, .glyphicon
+      position: absolute
+      top: 50%
+      z-index: 5
+      display: inline-block
+      margin-top: -10px
+.logo-caption
+   width: 150px
+   margin-top: -10%
