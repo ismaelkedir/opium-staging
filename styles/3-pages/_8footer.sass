@@ -3,7 +3,7 @@
    background-color: #002033
 
 .footer
-   padding: 30px 0px
+   padding: 20px 0px 5px 0px
    color: white
    // overflow: hidden
    .col-md-4
@@ -32,10 +32,12 @@
 .container-fluid.copyright
    padding: 15px
    color: #999
-   background-color: #001000
+   background-color: #001019
 
 a.extLink
    color: $color-primary
+   &:hover
+      text-decoration: none
 
 .hiddenLink
    color: #fff
@@ -45,3 +47,21 @@ a.extLink
    &:focus,
       text-decoration: none
       color: #fff
+.powered-by
+   a
+      &:hover,
+      &:focus
+         color: #fff
+         text-decoration: none
+   opacity: .5
+   transition: .2s
+   &:hover
+      opacity: 1
+   p
+      font-weight: 400
+      color: #fff
+
+   img
+      width: 40px
+      padding: 0 6px
+      // margin: 0 6px
