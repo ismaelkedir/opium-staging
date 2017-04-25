@@ -5,6 +5,7 @@ mixin menu-item(title, price, options)
          span.menu_dots
          span.menu_price #{price}ETB
       .options #{options}
+      hr
    
 .container-fluid.menu-title.text-center
    h1 Menu
@@ -17,17 +18,18 @@ mixin menu-item(title, price, options)
             
       +menu-item("Quesadilla (Chicken, Pork)", 168, "Our tortillas are hand rolled everyday and prepared with your choice of slow cooked meat. Our quesidillas are garnished with house made salsa, black beans, and melted cheese.")
       
-      +menu-item("Buffalo Chicken Sandwich", 170, "Made fresh to order, this American classic is prepared with house made buffalo sauce, fresh shredded cabbage, and house made ranch dressing all served on a fresh toasted bun.")
+      +menu-item("Buffalo Chicken Sandwich", 170, "Made fresh to order, this American classic is prepared with savory buffalo sauce, fresh shredded cabbage, and house made ranch dressing all served on a fresh toasted bun.")
       
-      +menu-item("Cold Beverages", 20, "(Sprite, Coke, Diet Coke, Fanta)")
+      +menu-item("Pesto Chicken Sandwich", 170, "This sandwich starts with house pesto using fresh basil and tomatoes. The chicken breast is grilled and served with melted provolone cheese on a fresh baked bun.")
+      
       
    .col-md-6
       +menu-item("Tacos (Chicken, Beef, Pork, Fish)", 168, "Our Tacos are prepared with your choice of meat as well as house made salsa, black beans, and melted cheese.")
       
       +menu-item("Opium Philly Cheesesteak (Chicken, Beef)", 180, "Our take on an American classic. The Opium Philly Cheese Steak comes with your choice of meat, grilled onions, peppers,  and melted cheese on fresh a fresh baked roll.")
       
-      +menu-item("Pesto Chicken Sandwich", 170, "This sandwich starts with house pesto using fresh basil and tomatoes. The chicken breast is grilled and served with melted provolone cheese on a fresh baked bun.")
+      +menu-item("Water", 15, "(Still, sparkling)")
       
-      +menu-item("Water", 15, "Still, sparkling")
+      +menu-item("Cold Beverages", 20, "(Sprite, Coke, Diet Coke, Fanta)")
       
       +menu-item("Hot Beverages", 15, "(House Special Tea infused with thyme, Addis Tea)")      
