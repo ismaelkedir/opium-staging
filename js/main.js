@@ -17,17 +17,17 @@ $(function() {
                 $('nav').addClass('navbar-fixed-top animated slideInDown');
                 $('.logo-white').addClass('hidden');
                 $('.logo').removeClass('hidden');
-                $('.navbar-brand').css({
-                    'width': '60px'
-                });
+               //  $('.navbar-brand').css({
+               //      'width': '80px'
+               //  });
                 return;
             } else {
                 $('.logo').addClass('hidden');
                 $('.logo-white').removeClass('hidden');
                 $('nav').removeClass('navbar-fixed-top animated slideInDown');
-                $('.navbar-brand').css({
-                    'width': '130px'
-                });
+               //  $('.navbar-brand').css({
+               //      'width': '160px'
+               //  });
                 return;
             };
         };

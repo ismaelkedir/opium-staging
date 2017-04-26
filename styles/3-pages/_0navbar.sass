@@ -2,6 +2,8 @@
    margin-bottom: 0
    border-bottom: 0
    background: transparent
+   text-align: center
+   vertical-align: middle
    border: 0
    margin-top: 0
    position: absolute
@@ -16,12 +18,14 @@
    z-index: 10
    transition: all .3s ease-in-out
    .navbar-brand
-      width: 130px
-      margin: 5px
-      padding: 0
+      width: 150px
       height: auto
+      transition-duration: .5s
+
    .navbar-nav
-      margin-top: 15px
+      margin-top: 35px
+   .navbar-toggle
+      margin-top: 30px
 
 .navbar.navbar-fixed-top.navbar-default
    background-color: white
@@ -30,12 +34,16 @@
    .navbar-collapse
       background-color: white
       border: 0
+   .navbar-nav
+      margin-top: 15px
    .navbar-nav>li>a
       color: #999
       transition-duration: .5s
       &:hover,
       &:focus
          color: $color-primary
+   .navbar-brand
+      width: 80px
 
 .navbar-default .navbar-nav>li>a
    color: white
@@ -44,9 +52,24 @@
    &:hover,
    &:focus
       color: $color-primary
+
+// When the screen width is less than 768px...
 @media(max-width: 768px)
-   .navbar-collapse
-      background-color: transparentize(black, .2)
-      border: 0
-   .navbar-brand
-      width: 20px
+   .navbar
+      .navbar-collapse
+         background-color: transparentize(black, .2)
+         border: 0
+         
+      .navbar-brand
+         width: 80px
+
+// When the screen width is less than 1200px
+@media(max-width: 1200px)
+   .navbar
+      width: 100%
+      padding: 0
+      .container
+         width: 100%
+      .navbar-brand
+         width: 100px
+         height: auto
