@@ -7,9 +7,15 @@ $(function() {
 
         var wScroll = $(this).scrollTop();
         var wHeight = $(this).height();
+        var wWidth = $(window).width();
+        var selector = $('.parallax-bg');        
 
         changeNavbar();
         revealSections();
+        
+        if (wWidth > 992) {
+            parallexBg();
+        }
 
         function changeNavbar() {
             if (wScroll > $('.carousel').height()) {
@@ -74,6 +80,11 @@ $(function() {
                     $('.chef-card').addClass('animated fadeIn');
                 }, 500)
             };
+        }
+
+        // Parallax the background images with different scrolling speed than the page
+        function parallexBg() {
+            selector.css('background-position', 'center ' + -(wScroll * 0.15) + 'px');
         }
     });
 });
