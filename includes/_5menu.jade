@@ -7,14 +7,14 @@ mixin menu-item(title, price, options)
       .options #{options}
       hr
    
-.container-fluid.menu-title.text-center
+.container-fluid.menu-title.text-center.parallax-bg
    h1 Menu
 
 .container.menu-section#menu-section
    .col-md-6
       +menu-item("Fresh Salsa & Tortilla Chips", 105, "Our salsa is house made with fire roasted tomatoes, onions, and peppers and served with guacamole and fresh tortilla chips.")
       
-      +menu-item("Chicken Wings", 161, "Pan seared chicken cooked with your choice of Spicy Buffalo or Sweet BBQ sauce and served with home made ranch.")
+      +menu-item("Chicken Wings", 181, "Pan seared chicken cooked with your choice of Spicy Buffalo or Sweet BBQ sauce and served with home made ranch.")
             
       +menu-item("Quesadilla (Chicken, Pork)", 168, "Our tortillas are hand rolled everyday and prepared with your choice of slow cooked meat. Our quesadillas are garnished with house made salsa, black beans, and melted cheese.")
       
@@ -26,7 +26,7 @@ mixin menu-item(title, price, options)
    .col-md-6
       +menu-item("Tacos (Chicken, Beef, Pork, Fish)", 168, "Our Tacos are prepared with your choice of meat as well as house made salsa, black beans, and melted cheese.")
       
-      +menu-item("Opium Philly Cheesesteak (Chicken, Beef)", 180, "Our take on an American classic. The Opium Philly Cheese Steak comes with your choice of meat, grilled onions, peppers,  and melted cheese on fresh a fresh baked roll.")
+      +menu-item("Opium Philly Cheesesteak (Chicken, Beef)", 180, "Our take on an American classic. The Opium Philly Cheese Steak comes with your choice of meat, grilled onions, peppers,  and melted cheese on a fresh baked roll.")
       
       +menu-item("Hot Beverages", 15, "(House Special Tea infused with thyme, Addis Tea)")      
       
