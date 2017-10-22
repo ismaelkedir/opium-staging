@@ -20,7 +20,7 @@ $(function() {
         function changeNavbar() {
             if (wScroll > $('.carousel').height()) {
                 //  $('nav').removeClass('navbar-static-top');
-                $('nav').addClass('navbar-fixed-top animated slideInDown');
+                $('nav.navbar.navbar-default.navbar-static-top#homepage-navbar').addClass('navbar-fixed-top animated slideInDown');
                 $('.logo-white').addClass('hidden');
                 $('.logo').removeClass('hidden');
                //  $('.navbar-brand').css({
@@ -30,7 +30,7 @@ $(function() {
             } else {
                 $('.logo').addClass('hidden');
                 $('.logo-white').removeClass('hidden');
-                $('nav').removeClass('navbar-fixed-top animated slideInDown');
+                $('nav.navbar.navbar-default.navbar-static-top#homepage-navbar').removeClass('navbar-fixed-top animated slideInDown');
                //  $('.navbar-brand').css({
                //      'width': '160px'
                //  });
@@ -87,24 +87,26 @@ $(function() {
             selector.css('background-position', 'center ' + -(wScroll * 0.15) + 'px');
         }
     });
+
+    function navScrollTo() {
+        // navigation scrolling animations
+        $('.navbar .navbar-nav li a').click(function(e) {
+            var targetIsId = e.currentTarget.id;
+            var sectionID = targetIsId + "-section";
+    
+            // Check if the href leads to an id of an element
+            if (targetIsId) {
+                e.preventDefault();
+    
+                // console.debug("Target is an ID");
+                // console.debug(sectionID + " Clicked");
+    
+                $('html body').animate({
+                    scrollTop: $("#" + sectionID).offset().top
+                }, 1000);
+            }
+        });
+    }
 });
 
-function navScrollTo() {
-    // navigation scrolling animations
-    $('.navbar .navbar-nav li a').click(function(e) {
-        var targetIsId = e.currentTarget.id;
-        var sectionID = targetIsId + "-section";
 
-        // Check if the href leads to an id of an element
-        if (targetIsId) {
-            e.preventDefault();
-
-            // console.debug("Target is an ID");
-            // console.debug(sectionID + " Clicked");
-
-            $('html body').animate({
-                scrollTop: $("#" + sectionID).offset().top
-            }, 1000);
-        }
-    });
-}

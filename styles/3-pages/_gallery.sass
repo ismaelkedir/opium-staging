@@ -1,0 +1,19 @@
+#gallery
+    margin: 150px auto
+
+.grid
+    margin: 0 auto
+    max-width: 100%
+    
+img.grid-item
+    width: 195px
+    background-color: gray
+    transition-duration: .3s
+    &:hover
+        // opacity: .9
+        transform: scale(1.05)
+        z-index: 2
+        box-shadow: 0 0 20px rgba(0,0,0,.5)
+
+.grid-item.grid-item--width2
+    width: 390px

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Reservation - Opium Restaurant</title>
+    <title>Services - Opium Restaurant</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,39 +26,12 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid reserve-title text-center">
-      <h1>Reservation</h1>
-    </div>
-    <div class="container" id="reservation-content">
-      <div class="col-md-6 col-md-offset-3">
-        <p class="reserve-instr text-center">Thank you for choosing to reserve a table at our restaurant. Choose your date and time and enter your information. If you have any questions, please call <strong>+251 96 789 2299 </strong>or email us at <a href="mailto:contact@opiumaddis.com">contact@opiumaddis.com</a></p><br>
-        <form method="post" id="reserve-form">
-          <div class="form-group">
-            <label>Your Contact Info</label>
-            <input type="hidden" name="_subject" value="New Reservation from Opium Website.">
-            <input class="form-control input-lg" type="text" id="name" required="true" name="Name" placeholder="Name">
-          </div>
-          <div class="form-group">
-            <input class="form-control input-lg" type="tel" id="phone" required="true" name="Phone Number" placeholder="Phone">
-          </div>
-          <div class="form-group">
-            <input class="form-control input-lg" type="email" id="email" required="true" name="Email Address" placeholder="Email Address">
-            <input type="text" style="display:none;" name="_gotcha">
-          </div>
-          <div class="form-group">
-            <input class="form-control input-lg" type="number" id="people" name="Number of People" placeholder="People" required="true" min="1" max="20">
-          </div>
-          <div class="form-group">
-            <label>When would you like to come?</label><br><br>
-            <div class="form-group">
-              <label for="date">Pick a Date</label>
-              <input class="form-control input-lg" type="date" id="date" name="Date" required="true">
-              <label for="date">Pick a Time</label>
-              <input class="timepicker text-center input-lg form-control" type="text" name="Time" required="true">
-            </div>
-          </div>
-          <button class="btn obtn-fill" type="submit">Book my table </button><br><br><span class="text-center takeaway">&nbsp;&nbsp; Ordering a Takeaway? Reserve through <a class="extLink" href="https://deliveraddis.com/restaurants/opium/" target="_blank">Deliver Addis</a>&nbsp;or&nbsp;<a class="extLink" target="_blank" href="http://www.telalakidelivery.com/index.php/menu/index/23">Telalaki Delivery</a></span>
-        </form>
+    <div id="gallery">
+      <div class="container">
+        <h1 class="text-center">Masonary Image Gallery here        </h1>
+        <div id="masonary-gallery">
+          <div class="grid"><img class="grid-item grid-item--width2" src="../images/Cheese Burger.jpeg" alt=""><img class="grid-item" src="../images/IMG_2946.jpeg" alt=""><img class="grid-item grid-item--width2" src="../images/IMG_1689.jpeg" alt=""><img class="grid-item" src="../images/new_philly_cheese.jpeg" alt=""><img class="grid-item grid-item--width2" src="../images/Pesto Chicken.jpeg" alt=""><img class="grid-item grid-item--width2" src="../images/Philly Cheese.jpeg" alt=""><img class="grid-item grid-item--width2" src="../images/IMG_1578.jpeg" alt=""><img class="grid-item" src="../images/new_philly_cheese2.jpeg" alt=""><img class="grid-item" src="../images/DJI_0218_big.jpg" alt=""><img class="grid-item" src="../images/DJI_0022_small.jpg" alt=""><img class="grid-item" src="../images/DJI_0133_small.jpg" alt=""></div>
+        </div>
       </div>
     </div>
     <footer>
@@ -88,11 +61,12 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="../js/smoothscroll.js"></script>
-    <script type="text/javascript" src="../js/toastr.min.js"></script>
-    <script type="text/javascript" src="../js/reserve-dist.js"></script>
+    <script type="text/javascript" src="../js/gallery.js"></script>
   </body>
 </html>
