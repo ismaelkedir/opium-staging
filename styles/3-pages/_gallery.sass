@@ -1,19 +1,51 @@
 #gallery
-    margin: 150px auto
-
+    margin-top: 80px
+    padding: 80px 0px
+    background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.7)), url('../images/DJI_0402_small.jpg')
+    background-attachment: fixed
+    background-size: cover
+    background-repeat: no-repeat
+    h1.text-center
+        color: white
 .grid
     margin: 0 auto
     max-width: 100%
     
-img.grid-item
-    width: 195px
-    background-color: gray
-    transition-duration: .3s
-    &:hover
-        // opacity: .9
-        transform: scale(1.05)
-        z-index: 2
-        box-shadow: 0 0 20px rgba(0,0,0,.5)
+.grid-item
+    width: 175px
+    overflow: hidden
+    .g-box
+        overflow: hidden
+        background-color: #eeeeee
+        cursor: pointer
+        &:hover 
+            .g-img img
+                transform: scale(1.2)
+            p.g-item-title
+                bottom: 0
+                opacity: 1
+        .g-img
+            // min-height: 225px
+            // max-height: 225px
+            width: 100%
+            overflow: hidden
+            img
+                min-width: 100%
+                height: auto
+                cursor: zoom-in
+                transition-duration: .9s
+        p.g-item-title
+            bottom: -50px
+            left: 0
+            right: 0
+            padding: 10px
+            margin: 0
+            position: absolute
+            opacity: 0
+            transition-duration: .3s
+            text-align: center
+            color: #ffffff
+            background-color: rgba(0,0,0,.5)
 
 .grid-item.grid-item--width2
-    width: 390px
+    width: 350px

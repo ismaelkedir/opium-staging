@@ -1,16 +1,170 @@
+mixin g-item-title(name)
+        p.g-item-title #{name}
+
 #gallery
     .container
-        h1.text-center Masonary Image Gallery here        
+        h1.text-center Our Picture Gallery
         #masonary-gallery
             .grid
-                img(src="../images/Cheese Burger.jpeg", alt="").grid-item.grid-item--width2
-                img(src="../images/IMG_2946.jpeg", alt="").grid-item
-                img(src="../images/IMG_1689.jpeg", alt="").grid-item.grid-item--width2
-                img(src="../images/new_philly_cheese.jpeg", alt="").grid-item
-                img(src="../images/Pesto Chicken.jpeg", alt="").grid-item.grid-item--width2
-                img(src="../images/Philly Cheese.jpeg", alt="").grid-item.grid-item--width2
-                img(src="../images/IMG_1578.jpeg", alt="").grid-item.grid-item--width2
-                img(src="../images/new_philly_cheese2.jpeg", alt="").grid-item
-                img(src="../images/DJI_0218_big.jpg", alt="").grid-item
-                img(src="../images/DJI_0022_small.jpg", alt="").grid-item
-                img(src="../images/DJI_0133_small.jpg", alt="").grid-item
+                .grid-item.grid-item--width2
+                    a(href="../images/Cheese Burger.jpeg" data-lightbox="gallery-items" data-title="Cheese Burger")
+                        .g-box
+                            .g-img
+                                img.img-responsive(src="../images/Cheese Burger.jpeg")
+                            +g-item-title("Cheese Burger")
+                .grid-item.grid-item--width2
+                    a(href="../images/IMG_2946.jpeg" data-lightbox="gallery-items" data-title="Cheese Burger")
+                        .g-box
+                            .g-img
+                                img.img-responsive(src="../images/IMG_2946.jpeg")
+                            +g-item-title("Cheese Burger")
+                .grid-item.grid-item--width2
+                    a(href="../images/IMG_1689.jpeg" data-lightbox="gallery-items" data-title="Cheese Burger")
+                        .g-box
+                            .g-img
+                                img.img-responsive(src="../images/IMG_1689.jpeg")
+                            +g-item-title("Cheese Burger")
+                .grid-item.grid-item--width2
+                    a(href='../images/DJI_0191_reversed_big.jpg' data-lightbox='gallery-items' data-title='Pesto Chicken Sandwich')
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/DJI_0191_reversed_big.jpg')
+                            +g-item-title('Pesto Chicken Sandwich')
+                .grid-item.grid-item--width2
+                    a(href='../images/Philly Cheese .jpeg' data-lightbox='gallery-items' data-title='Opium Philly Cheesesteak')
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/Philly Cheese .jpeg')
+                            +g-item-title('Opium Philly Cheesesteak')
+                .grid-item.grid-item--width2
+                    a(href='../images/new_philly_cheese2.jpeg' data-lightbox='gallery-items' data-title='Opium Philly Cheesesteak')
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/new_philly_cheese2.jpeg')
+                            +g-item-title('Opium Philly Cheesesteak')
+                .grid-item.grid-item--width2
+                    a(href='../images/Quesedila.jpeg' data-lightbox='gallery-items' data-title='Tacos' )
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/Quesedila.jpeg')
+                            +g-item-title('Tacos' )
+                .grid-item.grid-item--width2
+                    a(href='../images/Pesto Chicken2.jpeg' data-lightbox='gallery-items' data-title='Pesto Chicken Sandwich')
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/Pesto Chicken2.jpeg')
+                            +g-item-title('Pesto Chicken Sandwich')
+                .grid-item.grid-item--width2
+                    a(href='../images/IMG_2955.jpeg' data-lightbox='gallery-items' data-title='It\'s so good!' )
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/IMG_2955.jpeg')
+                            +g-item-title('It\'s so good!' )
+                .grid-item.grid-item--width2
+                    a(href="../images/Cheese Burger.jpeg" data-lightbox="gallery-items" data-title="Cheese Burger")
+                        .g-box
+                            .g-img
+                                img.img-responsive(src="../images/Cheese Burger.jpeg")
+                            +g-item-title("Cheese Burger")
+                .grid-item.grid-item--width2
+                    a(href="../images/IMG_2946.jpeg" data-lightbox="gallery-items" data-title="Cheese Burger")
+                        .g-box
+                            .g-img
+                                img.img-responsive(src="../images/IMG_2946.jpeg")
+                            +g-item-title("Cheese Burger")
+                .grid-item.grid-item--width2
+                    a(href="../images/IMG_1689.jpeg" data-lightbox="gallery-items" data-title="Cheese Burger")
+                        .g-box
+                            .g-img
+                                img.img-responsive(src="../images/IMG_1689.jpeg")
+                            +g-item-title("Cheese Burger")
+                .grid-item.grid-item--width2
+                    a(href='../images/DJI_0191_reversed_big.jpg' data-lightbox='gallery-items' data-title='Pesto Chicken Sandwich')
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/DJI_0191_reversed_big.jpg')
+                            +g-item-title('Pesto Chicken Sandwich')
+                .grid-item.grid-item--width2
+                    a(href='../images/Philly Cheese .jpeg' data-lightbox='gallery-items' data-title='Opium Philly Cheesesteak')
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/Philly Cheese .jpeg')
+                            +g-item-title('Opium Philly Cheesesteak')
+                .grid-item.grid-item--width2
+                    a(href='../images/new_philly_cheese2.jpeg' data-lightbox='gallery-items' data-title='Opium Philly Cheesesteak')
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/new_philly_cheese2.jpeg')
+                            +g-item-title('Opium Philly Cheesesteak')
+                .grid-item.grid-item--width2
+                    a(href='../images/Quesedila.jpeg' data-lightbox='gallery-items' data-title='Tacos' )
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/Quesedila.jpeg')
+                            +g-item-title('Tacos' )
+                .grid-item.grid-item--width2
+                    a(href='../images/Pesto Chicken2.jpeg' data-lightbox='gallery-items' data-title='Pesto Chicken Sandwich')
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/Pesto Chicken2.jpeg')
+                            +g-item-title('Pesto Chicken Sandwich')
+                .grid-item.grid-item--width2
+                    a(href='../images/IMG_2955.jpeg' data-lightbox='gallery-items' data-title='It\'s so good!' )
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/IMG_2955.jpeg')
+                            +g-item-title('It\'s so good!' )
+                .grid-item.grid-item--width2
+                    a(href="../images/Cheese Burger.jpeg" data-lightbox="gallery-items" data-title="Cheese Burger")
+                        .g-box
+                            .g-img
+                                img.img-responsive(src="../images/Cheese Burger.jpeg")
+                            +g-item-title("Cheese Burger")
+                .grid-item.grid-item--width2
+                    a(href="../images/IMG_2946.jpeg" data-lightbox="gallery-items" data-title="Cheese Burger")
+                        .g-box
+                            .g-img
+                                img.img-responsive(src="../images/IMG_2946.jpeg")
+                            +g-item-title("Cheese Burger")
+                .grid-item.grid-item--width2
+                    a(href="../images/IMG_1689.jpeg" data-lightbox="gallery-items" data-title="Cheese Burger")
+                        .g-box
+                            .g-img
+                                img.img-responsive(src="../images/IMG_1689.jpeg")
+                            +g-item-title("Cheese Burger")
+                .grid-item.grid-item--width2
+                    a(href='../images/DJI_0191_reversed_big.jpg' data-lightbox='gallery-items' data-title='Pesto Chicken Sandwich')
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/DJI_0191_reversed_big.jpg')
+                            +g-item-title('Pesto Chicken Sandwich')
+                .grid-item.grid-item--width2
+                    a(href='../images/Philly Cheese .jpeg' data-lightbox='gallery-items' data-title='Opium Philly Cheesesteak')
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/Philly Cheese .jpeg')
+                            +g-item-title('Opium Philly Cheesesteak')
+                .grid-item.grid-item--width2
+                    a(href='../images/new_philly_cheese2.jpeg' data-lightbox='gallery-items' data-title='Opium Philly Cheesesteak')
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/new_philly_cheese2.jpeg')
+                            +g-item-title('Opium Philly Cheesesteak')
+                .grid-item.grid-item--width2
+                    a(href='../images/Quesedila.jpeg' data-lightbox='gallery-items' data-title='Tacos' )
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/Quesedila.jpeg')
+                            +g-item-title('Tacos' )
+                .grid-item.grid-item--width2
+                    a(href='../images/Pesto Chicken2.jpeg' data-lightbox='gallery-items' data-title='Pesto Chicken Sandwich')
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/Pesto Chicken2.jpeg')
+                            +g-item-title('Pesto Chicken Sandwich')
+                .grid-item.grid-item--width2
+                    a(href='../images/IMG_2955.jpeg' data-lightbox='gallery-items' data-title='It\'s so good!' )
+                        .g-box
+                            .g-img
+                                img.img-responsive(src='../images/IMG_2955.jpeg')
+                            +g-item-title('It\'s so good!' )

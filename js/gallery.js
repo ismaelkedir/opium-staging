@@ -2,7 +2,7 @@ $(function () {
     $('.grid').masonry({
         // options
         itemSelector: '.grid-item',
-        columnWidth: 195,
+        columnWidth: 175,
         fitWidth: true,
     });
 }());
