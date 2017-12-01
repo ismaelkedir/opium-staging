@@ -1,0 +1,82 @@
+#gallery
+    margin-top: 80px
+    padding: 80px 0px
+    background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.7)), url('../images/DJI_0402_small.jpg')
+    background-attachment: fixed
+    background-size: cover
+    background-repeat: no-repeat
+    h1.text-center
+        color: white
+.grid
+    margin: 0 auto
+    max-width: 100%
+    
+.grid-item
+    width: 175px
+    overflow: hidden
+    .g-box
+        overflow: hidden
+        background-color: #eeeeee
+        cursor: pointer
+        &:hover 
+            .g-img img
+                transform: scale(1.2)
+            p.g-item-title
+                bottom: 0
+                opacity: 1
+        .g-img
+            // min-height: 225px
+            max-height: 225px
+            width: 100%
+            overflow: hidden
+            img
+                min-width: 100%
+                height: auto
+                cursor: zoom-in
+                transition-duration: .9s
+        p.g-item-title
+            bottom: -50px
+            left: 0
+            right: 0
+            padding: 10px
+            margin: 0
+            position: absolute
+            opacity: 0
+            transition-duration: .3s
+            text-align: center
+            color: #ffffff
+            background-color: rgba(0,0,0,.5)
+
+.grid-item.grid-item--width2
+    width: 350px
+
+.flex-active-slide
+    border: 0
+    border-radius: 0
+
+.flexslider
+    margin-bottom: 20px
+    border-radius: 0
+    
+#carousel.flexslider
+    ul 
+        li
+            img
+                opacity: .8
+                transition-duration: .3s
+                &:hover
+                    opacity: 1
+        li.flex-active-slide
+            img
+                opacity: 1
+
+
+#slider.flexslider .flex-caption,
+#carousel.flexslider .flex-caption
+  width: 100%
+  padding: 5px
+  font-size: 20px
+  text-align: center
+  bottom: 0
+  color: #000000
+//   text-shadow: 0 -1px 0 rgba(0,0,0,.3)
