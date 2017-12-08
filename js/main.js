@@ -100,12 +100,21 @@ $(function() {
     
                 // console.debug("Target is an ID");
                 // console.debug(sectionID + " Clicked");
-    
+                
                 $('html body').animate({
                     scrollTop: $("#" + sectionID).offset().top
                 }, 1000);
+
+                hideDropdown();
             }
         });
+    }
+
+    // collapses the mobile navbar if the screen width is less than 1090px
+    function hideDropdown() {
+        if ($(window).width() < 1090) {
+            $('.navbar .navbar-toggle').click();
+        }
     }
 });
 
