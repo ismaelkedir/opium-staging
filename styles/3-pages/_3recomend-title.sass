@@ -1,12 +1,15 @@
 .recomend-section
    height: 50vh
-   padding: 10em 0 10em 0
+   //padding: 10em 0 10em 0
    background-color: darkgrey
    background-image: url(../images/DJI_0133_small.jpg)
    background-repeat: no-repeat
    background-size: cover
    background-position: center
    background-attachment: fixed
+   display: flex
+   flex-direction: column
+   justify-content: space-around
    h1
       color: white
       font-weight: bold
@@ -17,8 +20,10 @@
    opacity: 0
 
 @media(max-width: 680px)
+      h1
+            font-size: 2em
+
+@media(max-width: 768px)
    .recomend-section
       background-attachment: unset
       padding-top: 9.5em
-      h1
-         font-size: 2em
