@@ -48,10 +48,13 @@ $(function() {
                 $('.about-section').addClass('animated fadeIn');
             };
 
+            // Commented recomendations and menu for updating menu items
             // Reveal recomend-title section
+            /*
             if (wScroll > $('.recomend-section').offset().top - wHeight / 1.5) {
                 $('.recomend-section').addClass('animated fadeIn');
             };
+
 
             // Reveal recomendations section
             if (wScroll > $('.recomendations').offset().top - wHeight / 1.5) {
@@ -63,7 +66,7 @@ $(function() {
             };
 
             // Reveal the menu-items section
-            if (wScroll > $('.menu-section').offset().top - wHeight / 1.5) {
+            (if (wScroll > $('.menu-section').offset().top - wHeight / 1.5) {
                 var eachMenu = '.menu-section .menu';
 
                 $(eachMenu).each(function(i) {
@@ -72,6 +75,7 @@ $(function() {
                     }, 100 * (i + 1));
                 });
             };
+            */
 
             // Reveal the our-chef section
             if (wScroll > $('.chef-section').offset().top - wHeight / 1.5) {
