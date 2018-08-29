@@ -43,12 +43,13 @@ $(function() {
                 'margin-top': '-' + wScroll / 5 + 'px'
             });
 
+            // =========== Commented temporarily ==============
             // Reveal about section
-            if (wScroll > $('.about-section').offset().top - wHeight / 1.5) {
-                $('.about-section').addClass('animated fadeIn');
-            };
+            // if (wScroll > $('.about-section').offset().top - wHeight / 1.5) {
+            //     $('.about-section').addClass('animated fadeIn');
+            // };
 
-            // Commented recomendations and menu for updating menu items
+            
             // Reveal recomend-title section
             /*
             if (wScroll > $('.recomend-section').offset().top - wHeight / 1.5) {
@@ -78,12 +79,12 @@ $(function() {
             */
 
             // Reveal the our-chef section
-            if (wScroll > $('.chef-section').offset().top - wHeight / 1.5) {
-                $('.chef-section').addClass('animated fadeIn');
-                setTimeout(function() {
-                    $('.chef-card').addClass('animated fadeIn');
-                }, 500)
-            };
+            // if (wScroll > $('.chef-section').offset().top - wHeight / 1.5) {
+            //     $('.chef-section').addClass('animated fadeIn');
+            //     setTimeout(function() {
+            //         $('.chef-card').addClass('animated fadeIn');
+            //     }, 500)
+            // };
         }
 
         // Parallax the background images with different scrolling speed than the page
@@ -96,18 +97,12 @@ $(function() {
         // navigation scrolling animations
         $('.navbar .navbar-nav li a').click(function(e) {
             var targetIsId = e.currentTarget.id;
-            var sectionID = targetIsId + "-section";
     
             // Check if the href leads to an id of an element
             if (targetIsId) {
                 e.preventDefault();
-    
-                // console.debug("Target is an ID");
-                // console.debug(sectionID + " Clicked");
-                
-                $('html body').animate({
-                    scrollTop: $("#" + sectionID).offset().top
-                }, 1000);
+
+                    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
 
                 hideDropdown();
             }
