@@ -1,27 +1,46 @@
-.menu-title
-   background: #0c1d2d
-//    margin-bottom: 100px
-
-.menu-title-note
-   font-size: 23px
-   a
-      color: $color-primary !important
-      text-decoration: underline
-      font-weight: bold !important
-
 #menu-section
-   margin: 30px auto
-   .menu
-      margin: 60px auto
-      .title
-            color: #555555
-      .price
-            color: $color-primary
-      img
-            max-width: 50px
-            display: inline-block
-      .options
-         font-weight: 600
-         font-size: 16px
+      background-image: url('../images/zigzag.png')
+      background-size: 250px
+      margin: 0px auto
+      border-top: 6px solid $color-green
+      padding: 0
+      color: #ffffff
+      .menu-title
+            font-size: 60px
+            color: $color-green
+            margin-top: 0
+            padding: 10px 0
+            border-bottom: 6px solid $color-primary
+            background-image: url('../images/menu_title_bg.png')
+            background-repeat: no-repeat
+            background-size: 100%
+      .menu
+            margin: 60px auto
+            padding-left: 70px
+            h1,h2,h3,h4
+                  margin-top: 10px
+            .title
+                  color: $color-dark-grey
+                  font-size: 50px
+            .tagline
+                  color: #ffffff
+                  font-size: 40px
+                  font-weight: 500
+            .price
+                  color: $color-primary
+                  font-size: 36px
+                  font-weight: bold
+            img
+                  max-width: 45px
+                  display: inline-block
+            .desc
+                  font-family: Arial
+                  font-weight: 400
+                  color: #ffffff
+                  font-size: 24px
+
+      h3.note
+            font-weight: bold
+
 @media(max-width: 768px)
    .menu_dots

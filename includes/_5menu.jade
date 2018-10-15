@@ -1,7 +1,8 @@
 mixin menu-item(title, nickname, price, option1, option2, option3, description)
-   .menu
+   .menu.col-md-6
       h1.title #{title}
-      h3.nick #{nickname}
+      h3.tagline #{nickname}
+      br
       .row
             .col-md-4
                   h2.price #{price} ETB
@@ -14,30 +15,24 @@ mixin menu-item(title, nickname, price, option1, option2, option3, description)
                         img.img.img-responsive(src="./images/beef.png", alt="beef")
       p.desc #{description}
    
-.container.text-center
-   h1 Menu
+#menu-section.container-fluid
+      h1.menu-title.text-center Menu
 
-.container.menu-section#menu-section
-   .col-md-6
-      +menu-item("Burrito", "The Best in Town", 130, 1, 1, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
-   .col-md-6
-      +menu-item("Burrito", "The Best in Town", 130, 1, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
-   .col-md-6
-      +menu-item("Burrito", "The Best in Town", 130, 1, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
-   .col-md-6
-      +menu-item("Burrito", "The Best in Town", 130, 1, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
-   .col-md-6
-      +menu-item("Burrito", "The Best in Town", 130, 1, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
-   .col-md-6
-      +menu-item("Burrito", "The Best in Town", 130, 1, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
-   .col-md-6
-      +menu-item("Burrito", "The Best in Town", 130, 1, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
-   .col-md-6
-      +menu-item("Burrito", "The Best in Town", 130, 1, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
-   .col-md-6
-      +menu-item("Burrito", "The Best in Town", 130, 1, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
+      .menu-section.row
+            .container
+                  +menu-item("Burrito", "The Best in Town", 130, 1, 1, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
+                  +menu-item("OPM Burrito", "The Staple", 169, 0, 0, 1, "Opium’s staple burrito comes with grilled steak, black beans, shredded cheese, cilantro lime rice, pico de gallo, guacamole and our Special Chef’s sauce rolled in a warm flour tortilla.")
+                  +menu-item("Special Burrito", "Asian inspired", 169, 0, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
+                  +menu-item("Tacos", "Three Amigos", 130, 1, 1, 1, "Our taco trio comes on three handmade flour tortillas and is served with black beans, shredded cheese, pico de gallo & guacamole.")
+                  +menu-item("Bowls", "A little bit of everything", 130, 1, 0, 1, "Our Tex-Mex bowls come with your choice of meat, black beans, sauteed onions & bell peppers, fire roasted salsa & guacamole with pico de gallo served on cilantro lime rice.")
+                  +menu-item("Tex-Burger", "Beef it up", 130, 0, 0, 1, "Our Texas style burgers are made using 100% beef, grilled onions and fresh tomatoes all stacked on top of a hand crafted bun with spread. Served with french fries.")
+                  +menu-item("Guacamole & Salsa", "Always in season", 130, 0, 0, 0, "A classic Mexican starter, our fresh salsa and guacamole is made daily and goes great with a Corona & lime!")
+                  +menu-item("Cheese Burger", "Extra cheesy", 165, 0, 0, 1, "Our cheeseburgers are made using 100% beef, grilled onions and fresh tomatoes all stacked on top of a hand crafted bun with your choice of sauce. Served with french fries.")
+                  +menu-item("Quesadillas", "Easy to eat on the go", 130, 1, 0, 1, "Our quesadillas come with your choice of meat, black beans, melted cheese, fire roasted salsa and guacamole.")
 
-include ../includes/_6beverages.jade
+      include ../includes/_6beverages.jade
 
-.row.text-center
-      h3 *Please note: All pricing is not including VAT. 
+      .row.text-center
+            h3.note *Please note: All pricing is not including VAT. 
+            br
+            br
