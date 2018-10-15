@@ -1,40 +1,43 @@
-mixin menu-item(title, price, options)
+mixin menu-item(title, nickname, price, option1, option2, option3, description)
    .menu
-      h3.menu-item
-         span.menu_title #{title}
-         span.menu_dots
-         span.menu_price #{price}ETB
-      .options #{options}
-      hr
+      h1.title #{title}
+      h3.nick #{nickname}
+      .row
+            .col-md-4
+                  h2.price #{price} ETB
+            .col-md-4
+                  if(option1)
+                        img.img.img-responsive(src="../images/chicken.png", alt="chicken")
+                  if(option2)
+                        img.img.img-responsive(src="../images/pork.png", alt="pork")
+                  if(option3)
+                        img.img.img-responsive(src="../images/beef.png", alt="beef")
+      p.desc #{description}
    
-.container-fluid.menu-title.text-center
-   h1 We are cooking up something new!
-      br
-      p.menu-title-note * You can still get our previous menu and order on 
-         a(href="https://deliveraddis.com/restaurants/opium/") deliver addis
+.container.text-center
+   h1 Menu
 
-//- .container.menu-section#menu-section
-//-    .col-md-6
-//-       +menu-item("Fresh Salsa & Tortilla Chips", 105, "Our salsa is house made with fire roasted tomatoes, onions, and peppers and served with guacamole and fresh tortilla chips.")
-      
-//-       +menu-item("Chicken Wings", 181, "Pan seared chicken cooked with your choice of Spicy Buffalo or Sweet BBQ sauce and served with home made ranch.")
-            
-//-       +menu-item("Quesadilla (Chicken, Pork)", 168, "Our tortillas are hand rolled everyday and prepared with your choice of slow cooked meat. Our quesadillas are garnished with house made salsa, black beans, and melted cheese.")
-      
-//-       +menu-item("Buffalo Chicken Sandwich", 170, "Made fresh to order, this American classic is prepared with savory buffalo sauce, fresh shredded cabbage, and house made ranch dressing all served on a fresh toasted bun.")
-      
-//-       +menu-item("Pesto Chicken Sandwich", 170, "This sandwich starts with house pesto using fresh basil and tomatoes. The chicken breast is grilled and served with melted provolone cheese on a fresh baked bun.")
-      
-      
-//-    .col-md-6
-//-       +menu-item("Tacos (Chicken, Pork)", 168, "Our Tacos are prepared with your choice of meat as well as house made salsa and black beans.")
-      
-//-       +menu-item("Opium Philly Cheesesteak (Chicken, Beef)", 180, "Our take on an American classic. The Opium Philly Cheese Steak comes with your choice of meat, grilled onions, peppers,  and melted cheese on a fresh baked roll.")
-      
-//-       +menu-item("Hot Beverages", 15, "(House Special Tea infused with thyme, Addis Tea)")      
-      
-//-       +menu-item("Cold Beverages", 20, "(Sprite, Coke, Diet Coke, Fanta)")
+.container.menu-section#menu-section
+   .col-md-6
+      +menu-item("Burrito", "The Best in Town", 130, 1, 1, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
+   .col-md-6
+      +menu-item("Burrito", "The Best in Town", 130, 1, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
+   .col-md-6
+      +menu-item("Burrito", "The Best in Town", 130, 1, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
+   .col-md-6
+      +menu-item("Burrito", "The Best in Town", 130, 1, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
+   .col-md-6
+      +menu-item("Burrito", "The Best in Town", 130, 1, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
+   .col-md-6
+      +menu-item("Burrito", "The Best in Town", 130, 1, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
+   .col-md-6
+      +menu-item("Burrito", "The Best in Town", 130, 1, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
+   .col-md-6
+      +menu-item("Burrito", "The Best in Town", 130, 1, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
+   .col-md-6
+      +menu-item("Burrito", "The Best in Town", 130, 1, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
 
-//-       +menu-item("Water", 15, "(Still, sparkling)")
-      
-      
+include ../includes/_6beverages.jade
+
+.row.text-center
+      h3 *Please note: All pricing is not including VAT. 

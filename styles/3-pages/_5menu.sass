@@ -1,5 +1,4 @@
 .menu-title
-   @extend .recomend-section
    background: #0c1d2d
 //    margin-bottom: 100px
 
@@ -14,27 +13,13 @@
    margin: 30px auto
    .menu
       margin: 60px auto
-      opacity: 0
-      .menu-item
-         width: 100%
-         display: flex
-         justify-content: space-between
-         .menu_title
-            background-color: #fff
-            z-index: 2
-            font-weight: bold
-         // .menu_dots
-         //    z-index: 1
-         //    background-image: radial-gradient(circle closest-side,#ccc 90%,#fff 10%)
-         //    background-position: bottom
-         //    background-size: 6px 3px
-         //    background-repeat: repeat-x
-         .menu_price
-            right: 0
+      .title
+            color: #555555
+      .price
             color: $color-primary
-            z-index: 2
-            font-weight: bold
-            background-color: #fff
+      img
+            max-width: 50px
+            display: inline-block
       .options
          font-weight: 600
          font-size: 16px
