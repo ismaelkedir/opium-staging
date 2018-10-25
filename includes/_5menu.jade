@@ -1,4 +1,10 @@
-mixin menu-item(title, nickname, price, option1, option2, option3, description, patty)
+mixin extra-choice(title, price)
+      .extra-choice
+            span.extra-choice-title #{title}
+            span.extra-choice-price +#{price} 
+                  span.extra-choice-curr ETB
+
+mixin menu-item(title, nickname, price, option1, option2, option3, chicken_price, pork_price, beef_price, description, patty, has_sauces)
    .menu.col-md-6
       h1.title #{title}
       h3.tagline #{nickname}
@@ -8,14 +14,35 @@ mixin menu-item(title, nickname, price, option1, option2, option3, description, 
                   h2.price #{price} ETB
             .col-md-4
                   if(option1)
-                        img.img.img-responsive(src="./images/chicken.png", alt="chicken")
+                        span.img.img-responsive.food-choice#chicken
+                              .extra-price
+                                    span.num +#{chicken_price}
+                                    br
+                                    | ETB
                   if(option2)
-                        img.img.img-responsive(src="./images/pork.png", alt="pork")
+                        span.img.img-responsive.food-choice#pork
+                              .extra-price
+                                    span.num +#{pork_price}
+                                    br
+                                    | ETB
                   if(option3)
-                        img.img.img-responsive(src="./images/beef.png", alt="beef")
+                        span.img.img-responsive.food-choice#beef
+                              .extra-price
+                                    span.num +#{beef_price}
+                                    br
+                                    | ETB
       p.desc #{description}
       if(patty)
-            img.img.img-responsive(src="./images/patty.png", alt="").extra-img
+            +extra-choice('Extra Patty', 40)
+      if(has_sauces)
+            h3.choose-sauce Choose Your Sauce
+            hr(style="")
+            +extra-choice('BBQ Ranch', 40)
+            br
+            +extra-choice('Honey Mustard', 40)
+            br
+            +extra-choice('Spread', 40)
+            
 
    
 #menu-section.container-fluid
@@ -23,15 +50,16 @@ mixin menu-item(title, nickname, price, option1, option2, option3, description, 
 
       .menu-section.row
             .container
-                  +menu-item("Burrito", "The Best in Town", 130, 1, 1, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
-                  +menu-item("OPM Burrito", "The Staple", 169, 0, 0, 1, "Opium’s staple burrito comes with grilled steak, black beans, shredded cheese, cilantro lime rice, pico de gallo, guacamole and our Special Chef’s sauce rolled in a warm flour tortilla.")
-                  +menu-item("Special Burrito", "Asian Inspired", 169, 0, 0, 1, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
-                  +menu-item("Tacos", "Three Amigos", 130, 1, 1, 1, "Our taco trio comes on three handmade flour tortillas and is served with black beans, shredded cheese, pico de gallo & guacamole.")
-                  +menu-item("Bowls", "A little bit of everything", 130, 1, 0, 1, "Our Tex-Mex bowls come with your choice of meat, black beans, sauteed onions & bell peppers, fire roasted salsa & guacamole with pico de gallo served on cilantro lime rice.")
-                  +menu-item("Tex-Burger", "Beef it up", 130, 0, 0, 1, "Our Texas style burgers are made using 100% beef, grilled onions and fresh tomatoes all stacked on top of a hand crafted bun with spread. Served with french fries.")
-                  +menu-item("Guacamole & Salsa", "Always in season", 130, 0, 0, 0, "A classic Mexican starter, our fresh salsa and guacamole is made daily and goes great with a Corona & lime!")
-                  +menu-item("Cheese Burger", "Extra cheesy", 165, 0, 0, 1, "Our cheeseburgers are made using 100% beef, grilled onions and fresh tomatoes all stacked on top of a hand crafted bun with your choice of sauce. Served with french fries.", 1)
-                  +menu-item("Quesadillas", "Easy to eat on the go", 130, 1, 0, 1, "Our quesadillas come with your choice of meat, black beans, melted cheese, fire roasted salsa and guacamole.")
+                  //- menu-item(title, nickname, price, option1, option2, option3, chicken_price, pork_price, beef_price, description, patty)
+                  +menu-item("Burrito", "The best in town", 130, 1, 1, 1, 40, 40, 40, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
+                  +menu-item("OPM Burrito", "The staple", 169, 0, 0, 1, 40, 40, 40, "Opium’s staple burrito comes with grilled steak, black beans, shredded cheese, cilantro lime rice, pico de gallo, guacamole and our special Chef’s sauce rolled in a warm flour tortilla.")
+                  +menu-item("Special Burrito", "Asian inspired", 169, 0, 0, 1, 40, 40, 40, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.")
+                  +menu-item("Tacos", "Three amigos", 130, 1, 1, 1, 40, 40, 40, "Our taco trio comes on three handmade flour tortillas with black beans, shredded cheese, pico de gallo & guacamole.")
+                  +menu-item("Bowls", "A little bit of everything", 130, 1, 0, 1, 40, 40, 40, "Our Tex-Mex bowls come with your choice of meat, black beans, sauteed onions & bell peppers, fire roasted salsa & guacamole with pico de gallo served on cilantro lime rice.")
+                  +menu-item("Tex-Burger", "Beef it up", 130, 0, 0, 1, 40, 40, 40, "Our Texas style burgers are made using 100% beef, grilled onions and fresh tomatoes all stacked on top of a hand crafted bun with spread. Served with french fries.")
+                  +menu-item("Guacamole & Salsa", "Always in season", 130, 0, 0, 0, 40, 40, 40, "A classic Mexican starter, our fresh salsa and guacamole is made daily and goes great with cold beer & lime.")
+                  +menu-item("Quesadillas", "Easy to eat on the go", 130, 1, 0, 1, 40, 40, 40, "Our quesadillas come with your choice of meat, black beans, melted cheese, fire roasted salsa and guacamole.")
+                  +menu-item("Cheese Burger", "Extra cheesy", 165, 0, 0, 1, 40, 40, 40, "Our cheeseburgers are made using 100% beef, grilled onions and fresh tomatoes all stacked on top of a hand crafted bun with your choice of sauce. Served with french fries.", 1, 1)
 
       include ../includes/_6beverages.jade
 

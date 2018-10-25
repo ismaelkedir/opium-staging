@@ -1,10 +1,12 @@
 #about-section
-    background: url('../images/marakash_right.png'), url('../images/marakash_left.png'),url('../images/sandy_texture.png')
-    background-size: 580px, 580px, 200px
-    background-repeat: no-repeat, no-repeat, repeat 
-    background-position: 74.6vw 5px, -200px 200px, left center 
+    background: url('../images/marakash_left.png'),url('../images/sandy_texture.png')
+    background-size: 580px, 200px
+    background-repeat:  no-repeat, repeat 
+    background-position: -200px 200px, left center 
     border-top: 5px solid #F8CE59
     padding-top: 80px
+    position: relative
+    overflow: hidden
 
     color: $color-brown
     h1
@@ -16,14 +18,21 @@
     hr
         width: 60%
         border-color: $color-brown
+    img.marakash-right
+        position: absolute
+        right: -200px
+        width: 580px
+        top: -120px
     img
-        margin-top: -300px
+        margin-top: 50px
 
 @media(min-width: 1511px)
     #about-section
-        background-position: 75vw 5px, -200px 200px, left center
+        background-position: -200px 200px, left center
 
 @media(max-width: 1440px)
     #about-section
         background: url('../images/sandy_texture.png')
+        img.marakash-right
+            display: none
 
