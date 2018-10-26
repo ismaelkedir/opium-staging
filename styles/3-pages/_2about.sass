@@ -6,7 +6,7 @@
     border-top: 5px solid #F8CE59
     padding-top: 80px
     position: relative
-    overflow: hidden
+    overflow-x: hidden
 
     color: $color-brown
     h1
@@ -25,6 +25,7 @@
         top: -120px
     img
         margin-top: 50px
+        margin-right: 0
 
 @media(min-width: 1511px)
     #about-section
@@ -36,3 +37,6 @@
         img.marakash-right
             display: none
 
+@media(max-width: 768px)
+    #about-section
+        background-size: 580px, 10px

@@ -107,7 +107,9 @@
                         transform: translate(-50%, -50%)
                         cursor: pointer
                         overflow: hidden
-                  &:hover
+                  &:hover,
+                  &:focus,
+                  &:active
                         .extra-choice-price
                               display: inline-block
                               background-color: $color-orange
@@ -126,8 +128,10 @@
 // @media(min-width: 1024px)
 
 @media(max-width: 425px)
-      #menu-section .menu
-            padding-left: 15px
+      #menu-section 
+            background-size: 80px
+            .menu
+                  padding-left: 15px
             .title
                   font-size: 38px
             .tagline
