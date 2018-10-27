@@ -33,15 +33,15 @@ mixin menu-item(title, nickname, price, option1, option2, option3, chicken_price
                                     | ETB
       p.desc #{description}
       if(patty)
-            +extra-choice('Extra Patty', 40)
+            +extra-choice('Extra Patty', 60)
       if(has_sauces)
             h3.choose-sauce Choose Your Sauce
             hr(style="")
-            +extra-choice('BBQ Ranch', 40)
+            +extra-choice('BBQ Ranch', 10)
             br
-            +extra-choice('Honey Mustard', 40)
+            +extra-choice('Honey Mustard', 10)
             br
-            +extra-choice('Spread', 40)
+            +extra-choice('Spread', 10)
             
 
    
