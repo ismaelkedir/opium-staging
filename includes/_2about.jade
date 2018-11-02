@@ -1,18 +1,20 @@
-.container.about-section.text-center#about-section
-   h1.text-center &horbar; About &horbar;
-   br
-   br
-   br
-   .col-md-6
-      img.about-img.img-responsive(src="./images/DJI_0314_small.jpg", alt="alt")
-
-   .col-md-6.text-left
-      h2.about-slogan we specialize in classic american dishes 
-
-      p.about-txt Opium Restaurant Addis is located in the Chechnya neighborhood (near Bole). The food we serve is American Tex-Mex. At Opium, we pay close attention to detail in order to create flavorful dishes. We go to the market daily to source the freshest ingredients for our menu. Our sauces are handmade daily, which adds complexity to our dishes.
-         br
-         | Currently, the menu consists of American classics such as the “Philly Cheese Steak” and other favorites such as handmade tacos. 
-
-      hr
-      p.chef-quote “ I see a lot of different restaurants serving the same menu in Ethiopia. Opium hopes to change that by bringing more diversity and fusion into Ethiopia’s food scene. ” 
-      i - Chef Mekbib (Owner and General Manager).
+#about-section.container-fluid.about-section.text-center
+    .row
+        .container
+            h1.text-center About
+            hr
+            br
+            .col-md-8.col-md-offset-2.text-center
+                p.about-txt A local staple, Opium Restaurant prides itself on using the freshest natural ingredients from the farm to table. Established in 2017 by Chef Mekbib Kassa, Opium Restaurant specializes in American Tex-Mex dishes. Located in Bole on the ground ﬂoor of Rakan Building, Opium Restaurant is known for having the best burritos in Addis Ababa. The menu assortment also offers delicious toasted sandwiches and flame grilled juicy burgers. Craving a Tex-Mex Breakfast? Try the Chef’s recommended Huevos Rancheros or grab a breakfast burrito on the go!
+    .row
+        .container
+            h1.text-center Chef
+            hr
+            br
+            .col-md-8.col-md-offset-2.text-center
+                p.about-txt Chef Mekbib Kassa moved to Addis Ababa from Las Vegas, Nevada and is currently the Head Chef at Opium Restaurant Addis. With seven years of cooking experience, Chef Mekbib spent the majority of his time in Las Vegas cooking for a wide range of different establishments including Fine Dining, Premium Steakhouses, Banquets & Catering. Along with overseeing general operations, Chef Mekbib plans to develop Opium’s menu with more fusion items and start Tex-Mex catering in 2019. 
+    //- The marakash image on the right (absolutely positioned)
+    img.marakash-right(src="./images/marakash_right.png", alt="")
+    
+    //- The vector location image section
+    include ./_3location.jade

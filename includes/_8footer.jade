@@ -1,42 +1,21 @@
 footer
    .container-fluid#contact-section
       .container.text-center.footer
-         .col-md-6.about
-            h3 Opium Restaurant Addis
-            p You can eat in or order takeaway on 
-               a.extLink(href="https://deliveraddis.com/restaurants/opium/" target='_blank') Deliver Addis
-            br
-            //- a.btn.obtn-fill(href="/pages/reservation.html") Book a Table
-            
-            //- p 
-            //-    i.fa.fa-clock-o(aria-hidden="true") &nbsp;&nbsp; 
-            //-    |7 days a week. 8:00AM - 9:00PM
-            i.fa.fa-phone(aria-hidden="true") &nbsp;&nbsp;
-            span Call 
-            a.extLink(href="tel:+251983341261").phone-num
-               | +251 98 334 1261
-         .col-md-6.address
-            h3 Where to find us
-            p 
-               i.fa.fa-map-marker(aria-hidden="true") &nbsp;&nbsp;
-               |Bole Atlas, towards Desalegn Hotel on Rakan Building Ground Floor. Addis Ababa, Ethiopia. 
-               br 
-               | Click&nbsp;
-               a.extLink(target="_blank" href="https://www.google.com/maps/place/Opium+Addis+Restaurant/@9.001162,38.779561,18z/data=!4m5!3m4!1s0x0:0xb8ba8815f0f2ead!8m2!3d9.0045893!4d38.7820172?hl=en-US") Here&nbsp;
-               | for directions!
-            br
-            p FIND US ON
-            p  
-               a.social-link(target="_blank" href="https://www.facebook.com/Opiumaddis/")
-                  i.fa.fa-facebook(aria-hidden="true")
-               a.social-link(target="_blank" href="https://www.instagram.com/opiumaddis/")
-                  i.fa.fa-instagram(aria-hidden="true")
-         
-      .container-fluid.text-center.copyright
-         .col-md-6
-            span Copyright &copy; 2017 Opium Restaurant Addis, All Rights Reserved.
-         .col-md-6
-            .powered-by
-               a(href="http://www.gebeya.com" target="_blank")
-                  p Powered by
-                     img(src="./images/gebeya-brand1.png", alt="Gebeya")
+            .row
+
+                  .col-md-6
+                        .row
+                              .col-md-12.about
+                                    img(src="./images/logo_transparent.png", alt="")
+                                    h3 Atlas, Rakan Bldg Ground floor
+                  .col-md-6.delivery
+                        img(src="./images/deliver_addis.png", alt="Deliver Addis" width="80px")
+                        h3 You can eat-in or order takeaway 
+                              br
+                              | on 
+                              a(href="https://deliveraddis.com/restaurants/opium" target="_blank") Deliver Addis
+            .row
+                  .col-md-12
+                        p.powered-by Powered by 
+                              a(target="_blank" href="http://gebeya.media" title="Gebeya Media")
+                                    img.img.img-responsive.gmedia-logo(src="./images/gmedia_logo.png", alt="G")

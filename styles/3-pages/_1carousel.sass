@@ -5,9 +5,13 @@
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption
   z-index: 10
-  top: 45%
+  top: 25%
   h1
-    font-size: 40px
+    font-size: 50px
+  hr
+    max-width: 70%
+  h2
+    color: #E8C6A4
 
 /* Declare heights because of positioning of img element */
 .carousel .item
@@ -21,22 +25,25 @@
 .carousel-inner
   .item
     background-size: cover
-    background-position: center
+    background-position: center bottom
   #pictureSlide1
-    background-image: url('../images/DJI_0022.JPG')
+    background-image: url('../images/hero_bg.jpg')
   #pictureSlide2
     background-image: url('../images/DJI_0277.jpg')
   #pictureSlide3
     background-image: url('../images/DJI_0107.JPG')
 
+// On desktop and up...
 @media(min-width: 768px)
    .carousel
       height: 100vh
-
    .carousel-caption
-      top: 40%
+      top: 30%
       h1
-         font-size: 58px
+         font-size: 80px
+      h2
+        font-size: 40px
+        color: #E8C6A4
 
    .carousel-caption p
        margin-bottom: 20px

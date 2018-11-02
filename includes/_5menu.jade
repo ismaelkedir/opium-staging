@@ -1,38 +1,70 @@
-mixin menu-item(title, price, options)
-   .menu
-      h3.menu-item
-         span.menu_title #{title}
-         span.menu_dots
-         span.menu_price #{price}ETB
-      .options #{options}
-      hr
+mixin extra-choice(title, price)
+      span.extra-choice(onclick="void(0)")
+            span.extra-choice-title #{title}
+            span.extra-choice-price +#{price} 
+                  span.extra-choice-curr ETB
 
-.container-fluid.menu-title.text-center
-   h1 We are cooking up something new!
+mixin menu-item(title, nickname, price, option1, option2, option3, chicken_price, pork_price, beef_price, description, patty, has_sauces)
+   .menu.col-md-6
+      h1.title #{title}
+      h3.tagline #{nickname}
       br
-      p.menu-title-note * You can still get our previous menu and order on 
-         a(href="https://deliveraddis.com/restaurants/opium/") Deliver Addis
+      .row
+            .col-md-5
+                  h2.price #{price} ETB
+            .col-md-7
+                  if(option1)
+                        span.img.img-responsive.food-choice#chicken
+                              .extra-price
+                                    span.num +#{chicken_price}
+                                    br
+                                    | ETB
+                  if(option2)
+                        span.img.img-responsive.food-choice#pork
+                              .extra-price
+                                    span.num +#{pork_price}
+                                    br
+                                    | ETB
+                  if(option3)
+                        span.img.img-responsive.food-choice#beef
+                              .extra-price
+                                    span.num +#{beef_price}
+                                    br
+                                    | ETB
+            .col-md-12
+                  p.desc #{description}
+      if(patty)
+            +extra-choice('Extra Patty', 60)
+      if(has_sauces)
+            h3.choose-sauce Extra Sauce
+            hr(style="")
+            +extra-choice('BBQ Ranch', 10)
+            br
+            +extra-choice('Honey Mustard', 10)
+            br
+            +extra-choice('Spread', 10)
+            
 
-//- .container.menu-section#menu-section
-//-    .col-md-6
-//-       +menu-item("Fresh Salsa & Tortilla Chips", 105, "Our salsa is house made with fire roasted tomatoes, onions, and peppers and served with guacamole and fresh tortilla chips.")
+   
+#menu-section.container-fluid
+      h1.menu-title.text-center Menu
 
-//-       +menu-item("Chicken Wings", 181, "Pan seared chicken cooked with your choice of Spicy Buffalo or Sweet BBQ sauce and served with home made ranch.")
+      .container
+            .menu-section.row
+                  //- menu-item(title, nickname, price, option1, option2, option3, chicken_price, pork_price, beef_price, description, patty)
+                  +menu-item("Burrito", "The best in town", 130, 1, 1, 1, 44, 44, 39, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.", 0, 0)
+                  +menu-item("OPM Burrito", "The staple", 169, 0, 0, 1, 44, 44, 39, "Opium’s staple burrito comes with grilled steak, black beans, shredded cheese, cilantro lime rice, pico de gallo and our special Chef’s sauce rolled in a warm flour tortilla.", 0, 0)
+                  +menu-item("Special Burrito", "Asian inspired", 169, 0, 0, 1, 44, 44, 39, "Our Special burrito comes with grilled steak, black beans, shredded cheese, cilantro lime rice, pico de gallo, and our Asian spice & herb blended sauce wrapped in a warm flour tortilla.", 0, 0)
+                  +menu-item("Tacos", "Three amigos", 130, 1, 1, 1, 44, 44, 39, "Our taco trio comes on three handmade flour tortillas with black beans, pico de gallo & guacamole \(Vegetarian option not available\)", 0, 0)
+                  +menu-item("Bowls", "A little bit of everything", 130, 1, 0, 1, 44, 44, 39, "Our Tex-Mex bowls come with your choice of meat, black beans, sauteed onions & bell peppers, fire roasted salsa & guacamole with pico de gallo served on cilantro lime rice.", 0, 0)
+                  +menu-item("Tex-Burger", "Beef it up", 130, 0, 0, 1, 44, 44, 39, "Our Texas style burgers are made using 100% beef, grilled onions and fresh tomatoes all stacked on top of a hand crafted bun with spread. Served with french fries.", 0, 0)
+                  +menu-item("Guacamole & Salsa", "Always in season", 130, 0, 0, 0, 44, 44, 39, "A classic Mexican starter, our fresh salsa and guacamole is made daily and goes great with cold beer & lime.", 0, 0)
+                  +menu-item("Quesadillas", "Easy to eat on the go", 130, 1, 0, 1, 44, 44, 39, "Our quesadillas come with your choice of meat, black beans, melted cheese, fire roasted salsa and guacamole.", 0, 0)
+                  +menu-item("Cheese Burger", "Extra cheesy", 165, 0, 0, 0, 40, 40, 40, "Our cheeseburgers are made using 100% beef, grilled onions and fresh tomatoes all stacked on top of a hand crafted bun with your choice of sauce. Served with french fries.", 1, 1)
 
-//-       +menu-item("Quesadilla (Chicken, Pork)", 168, "Our tortillas are hand rolled everyday and prepared with your choice of slow cooked meat. Our quesadillas are garnished with house made salsa, black beans, and melted cheese.")
+      include ../includes/_6beverages.jade
 
-//-       +menu-item("Buffalo Chicken Sandwich", 170, "Made fresh to order, this American classic is prepared with savory buffalo sauce, fresh shredded cabbage, and house made ranch dressing all served on a fresh toasted bun.")
-
-//-       +menu-item("Pesto Chicken Sandwich", 170, "This sandwich starts with house pesto using fresh basil and tomatoes. The chicken breast is grilled and served with melted provolone cheese on a fresh baked bun.")
-
-
-//-    .col-md-6
-//-       +menu-item("Tacos (Chicken, Pork)", 168, "Our Tacos are prepared with your choice of meat as well as house made salsa and black beans.")
-
-//-       +menu-item("Opium Philly Cheesesteak (Chicken, Beef)", 180, "Our take on an American classic. The Opium Philly Cheese Steak comes with your choice of meat, grilled onions, peppers,  and melted cheese on a fresh baked roll.")
-
-//-       +menu-item("Hot Beverages", 15, "(House Special Tea infused with thyme, Addis Tea)")
-
-//-       +menu-item("Cold Beverages", 20, "(Sprite, Coke, Diet Coke, Fanta)")
-
-//-       +menu-item("Water", 15, "(Still, sparkling)")
+      .row.text-center
+            h3.note *Please note: All pricing is not including VAT. 
+            br
+            br

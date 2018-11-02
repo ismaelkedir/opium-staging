@@ -1,24 +1,42 @@
-.about-section
-   margin: 80px auto
-   opacity: 0
-   background-color: white
-   .col-md-6
-      img
-         min-width: 100%
-         height: auto
+#about-section
+    background: url('../images/marakash_left.png'),url('../images/sandy_texture.png')
+    background-size: 580px, 200px
+    background-repeat:  no-repeat, repeat 
+    background-position: -200px 200px, left center 
+    border-top: 5px solid #F8CE59
+    padding-top: 80px
+    position: relative
+    overflow-x: hidden
 
-.about-img
-   padding: 0 40px
+    color: $color-brown
+    h1
+        font-size: 60px
+    p
+        font-size: 20px
+        font-family: Arial
+        font-weight: 400
+    hr
+        width: 60%
+        border-color: $color-brown
+    img.marakash-right
+        position: absolute
+        right: -200px
+        width: 580px
+        top: -120px
+    img
+        margin-top: 50px
+        margin-right: 0
 
-.about-slogan
-   text-transform: uppercase
+@media(min-width: 1511px)
+    #about-section
+        background-position: -200px 200px, left center
 
-.about-txt
-   font-size: 18px
-.chef-quote
-   font-size: 20px
-   font-style: italic
+@media(max-width: 1440px)
+    #about-section
+        background: url('../images/sandy_texture.png')
+        img.marakash-right
+            display: none
 
-@media(max-width: 992px)
-   .about-img
-      padding: 0
+@media(max-width: 768px)
+    #about-section
+        background-size: 580px, 10px
