@@ -15,9 +15,9 @@
             background-repeat: repeat
             background-size: 100%
       .menu
-            margin: 60px auto
+            margin: 10px auto
             padding-left: 50px
-            min-height: 347px
+            min-height: 460px
             h1,h2,h3,h4
                   margin-top: 10px
             .title
@@ -40,6 +40,7 @@
                   margin: 0 5px
                   display: inline-block
                   cursor: pointer
+                  z-index: 10
                   background-size: cover
                   background-position: center
                   transition-duration: .3s
@@ -128,7 +129,9 @@
                   font-weight: bold
       h3.note
             font-weight: bold
-// @media(min-width: 1024px)
+@media(max-width: 768px)
+      h3.note
+            font-size: 24px
 
 @media(max-width: 425px)
       #menu-section 
@@ -141,6 +144,8 @@
                   font-size: 28px
             .desc
                   font-size: 20px
+            h3.note
+                  font-size: 20px   
 @media(max-width: 1200px)
       #menu-section
             h2.price
