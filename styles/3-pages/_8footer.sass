@@ -43,26 +43,32 @@
          h4
                font-size: 24px
 
-   .powered-by-section
-         a
-               display: inline-block
-               opacity: .7
-               transition-duration: .3s
-               &:hover
-                     opacity: 1
+.powered-by-section
+      background-color: #fff
+      padding: 0px 0
+      a
+            display: block
+            opacity: .7
+            transition-duration: .3s
+            &:hover,
+            &:focus
+                  opacity: 1
+                  text-decoration: none
 
-a > .powered-by
-      text-decoration: none
-      color: #ffffff
-      margin-top: -30px
-      img.gmedia-logo
-            display: inline-block
-            max-width: 30px
+      a > .powered-by
+            text-decoration: none
+            font-family: Roboto, arial, sans-serif
+            padding-top: 15px
+            color: $color-dark-grey
+            img.gmedia-logo
+                  display: inline-block
+                  max-width: 40px
+                  margin-right: -5px
 
-.container-fluid.copyright
-   padding: 15px
-   color: #999
-   background-color: #001019
+      .copyright
+            font-weight: 300
+            color: #999
+            font-family: Roboto, arial, sans-serif
 
 
 @media(max-width: 992px)
