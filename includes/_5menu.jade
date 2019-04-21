@@ -1,7 +1,7 @@
 mixin extra-choice(title, price)
       span.extra-choice(onclick="void(0)")
             span.extra-choice-title #{title}
-            span.extra-choice-price #{price} 
+            span.extra-choice-price #{price}
                   span.extra-choice-curr ETB
 
 mixin menu-item(title, nickname, option1, option2, option3, chicken_price, vegi_price, beef_price, description, patty, has_sauces, is_burger, is_burger_big)
@@ -44,9 +44,9 @@ mixin menu-item(title, nickname, option1, option2, option3, chicken_price, vegi_
                   p.desc #{description}
       if(patty)
             +extra-choice('Extra Patty', 10)
-            
 
-   
+
+
 #menu-section.container-fluid
       h1.menu-title.text-center Menu
 
@@ -56,7 +56,7 @@ mixin menu-item(title, nickname, option1, option2, option3, chicken_price, vegi_
                   +menu-item("Burritos", "The best in town", 1, 1, 1, 195, 187, 152, "Our traditional burrito comes with black beans, shredded cheese, cilantro lime rice, pico de gallo & guacamole all wrapped in a warm ﬂour tortilla.", 0, 0, 0)
                   +menu-item("OPM Burrito", "The staple", 0, 0, 1, 0, 0, 187, "Opium’s staple burrito comes with braised steak, black beans, shredded cheese, cilantro lime rice, pico de gallo and our special Chef’s sauce rolled in a warm flour tortilla.", 0, 0, 0)
                   +menu-item("House Burrito", "Asian inspired", 0, 0, 1, 0, 0, 187, "Our House burrito comes with slow cooked steak, black beans, shredded cheese, cilantro lime rice, pico de gallo, and our Asian spice & herb blended sauce wrapped in a warm flour tortilla.", 0, 0, 0)
-                  +menu-item("Tacos", "Three amigos", 1, 1, 1, 195, 0, 187, "Our taco trio comes on three handmade flour tortillas with black beans, pico de gallo & guacamole \(Vegetarian option not available\)", 0, 0, 0)
+                  +menu-item("Tacos", "Three amigos", 1, 0, 1, 195, 0, 187, "Our taco trio comes on three handmade flour tortillas with black beans, pico de gallo & guacamole \(Vegetarian option not available\)", 0, 0, 0)
                   +menu-item("Bowls", "A little bit of everything", 1, 1, 1, 195, 152, 187, "Our Tex-Mex bowls come with your choice of meat, black beans, sauteed onions & bell peppers, fire roasted salsa & guacamole with pico de gallo served on cilantro lime rice.", 0, 0, 0)
                   +menu-item("Tex-Burger", "Beef it up", 0, 0, 1, 0, 0, 152, "Our Texas style burgers are made using 100% beef, grilled onions and fresh tomatoes all stacked on top of a hand crafted bun with spread. Served with french fries.", 0, 0, 0)
                   +menu-item("Quesadillas", "Easy to eat on the go", 1, 1, 1, 195, 152, 187, "Our quesadillas come with your choice of meat, black beans, melted cheese, fire roasted salsa and guacamole.", 0, 0, 0)
@@ -81,6 +81,6 @@ mixin menu-item(title, nickname, option1, option2, option3, chicken_price, vegi_
       include ../includes/_6beverages.jade
 
       .row.text-center
-            h3.note *Please note: All pricing is not including VAT. 
+            h3.note *Please note: All pricing is not including VAT.
             br
             br
