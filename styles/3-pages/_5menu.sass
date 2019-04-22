@@ -17,7 +17,7 @@
       .menu
             margin: 10px auto
             padding-left: 50px
-            min-height: 460px
+            min-height: 500px
             h1,h2,h3,h4
                   margin-top: 10px
             .title
@@ -33,57 +33,43 @@
                   color: $color-primary
                   font-size: 34px
                   font-weight: bold
-            .food-choice
-                  border-radius: 50%
-                  width: 45px
-                  height: 45px
-                  margin: 0 5px
-                  display: inline-block
-                  cursor: pointer
-                  z-index: 10
-                  background-size: cover
-                  background-position: center
-                  transition-duration: .3s
-                  box-shadow: 0 0px 5px 0px rgba(0,0,0,0.3)
+            .option
+                  display: inline-flex
+                  justify-content: center
+                  vertical-align: middle
+                  align-items: center
+                  .food-choice
+                        border-radius: 50%
+                        width: 45px
+                        height: 45px
+                        margin: 0 5px
+                        background-size: cover
+                        background-position: center
+                        transition-duration: .3s
+                        box-shadow: 0 0px 5px 0px rgba(0,0,0,0.3)
                   .extra-price
-                        display: none
-                  &:hover
-                        transform: scale(2)
-                        box-shadow: 0 2px 20px 0px rgba(0,0,0,0.3)
-                        overflow: hidden
-                        position: relative
-                        .extra-price
-                              position: absolute
-                              display: inline-block
-                              left: 50%
-                              transform: translateX(-50%)
-                              font-weight: bold
-                              line-height: 15px
-                              margin-top: 18%
-                              .num
-                                    color: $color-primary
-            #chicken.food-choice
-                  background: url('../images/chicken.png')    
-                  background-size: cover
-                  background-position: center              
-                  &:hover
-                        background: linear-gradient(transparentize($color-orange, .1),transparentize($color-orange, .1)), url('../images/chicken.png')
+                        font-size: 34px
+                        font-weight: bold
+                        color: $color-primary
+
+                  #chicken.food-choice
+                        background: url('../images/chicken.png')    
                         background-size: cover
                         background-position: center
-            #pork.food-choice
-                  background: url('../images/pork.png')                  
-                  background-size: cover
-                  background-position: center
-                  &:hover
-                        background: linear-gradient(transparentize($color-orange, .1),transparentize($color-orange, .1)), url('../images/pork.png')
+                  #vegi.food-choice
+                        background: url('../images/vegi.png')                  
                         background-size: cover
                         background-position: center
-            #beef.food-choice
-                  background: url('../images/beef.png')                  
-                  background-size: cover
-                  background-position: center
-                  &:hover
-                        background: linear-gradient(transparentize($color-orange, .1),transparentize($color-orange, .1)), url('../images/beef.png')
+                  #beef.food-choice
+                        background: url('../images/beef.png')                  
+                        background-size: cover
+                        background-position: center
+                  #burger.food-choice
+                        background: url('../images/burger.png')                  
+                        background-size: cover
+                        background-position: center
+                  #burger-big.food-choice
+                        background: url('../images/burger_big.png')                  
                         background-size: cover
                         background-position: center
 
@@ -114,17 +100,18 @@
                   &:hover,
                   &:focus,
                   &:active
+                        background-color: $color-primary
                         .extra-choice-price
-                              display: inline-block
+                              // display: inline-block
                               background-color: $color-orange
-                              width: 90%
-                              text-align: center
-                              color: $color-primary
-                              font-family: 'American typewriter'
-                              font-size: 24px
-                              font-weight: bold
-                        .extra-choice-curr
-                              color: #ffffff
+                              // width: 90%
+                              // text-align: center
+                              // color: $color-primary
+                              // font-family: 'American typewriter'
+                              // font-size: 24px
+                              // font-weight: bold
+                        // .extra-choice-curr
+                        //       color: #ffffff
             h3.choose-sauce
                   font-weight: bold
       h3.note
