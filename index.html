@@ -77,93 +77,18 @@
         </div>
       </div>
     </nav>
-    <div
-      class="carousel slide"
-      id="myCarousel"
-      data-ride="carousel"
-      style="position: relative;"
-    >
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-        <li data-target="#myCarousel" data-slide-to="5"></li>
-        <li data-target="#myCarousel" data-slide-to="6"></li>
-      </ol>
+    <div class="carousel slide" id="myCarousel" data-ride="carousel">
       <div class="carousel-inner">
-        <div
-          class="item active"
-          style="background-image: url('./images/01.jpg');"
-        ></div>
-        <div
-          class="item"
-          style="background-image: url('./images/02.jpg');"
-        ></div>
-        <div
-          class="item"
-          style="background-image: url('./images/03.jpg');"
-        ></div>
-        <div
-          class="item"
-          style="background-image: url('./images/04.jpg');"
-        ></div>
-        <div
-          class="item"
-          style="background-image: url('./images/05.jpg');"
-        ></div>
-        <div
-          class="item"
-          style="background-image: url('./images/06.jpg');"
-        ></div>
-        <div
-          class="item"
-          style="background-image: url('./images/07.jpg');"
-        ></div>
-      </div>
-
-      <div
-        style="
-          position: absolute;
-          display: block;
-          width: 100%;
-          height: 100vh;
-          z-index: 2;
-          background-color: rgba(0, 0, 0, 0.3);
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-        "
-      >
-        <div class="carousel-caption">
-          <h1 class="animated fadeInDown">Opium Restaurant</h1>
-          <hr />
-          <h2>Eat fresh, get hooked</h2>
+        <div class="item active" id="pictureSlide1">
+          <!--img.animated.fadeIn(src="./images/DJI_0191.jpg", alt="pictureSlide1")-->
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="animated fadeInDown">Opium Restaurant</h1>
+              <hr />
+              <h2>Farm to table</h2>
+            </div>
+          </div>
         </div>
-        <a
-          class="left carousel-control"
-          href="#myCarousel"
-          role="button"
-          data-slide="prev"
-        >
-          <span
-            class="glyphicon glyphicon-chevron-left"
-            aria-hidden="true"
-          ></span
-        ></a>
-        <a
-          class="right carousel-control"
-          href="#myCarousel"
-          role="button"
-          data-slide="next"
-        >
-          <span
-            class="glyphicon glyphicon-chevron-right"
-            aria-hidden="true"
-          ></span
-        ></a>
       </div>
     </div>
     <div class="container-fluid about-section text-center" id="about-section">
@@ -204,7 +129,6 @@
       <h1 class="menu-title text-center">Menu</h1>
       <div class="container">
         <div class="menu-section row">
-          <!-- Borritos -->
           <div class="menu col-md-6">
             <h1 class="title">Burritos</h1>
             <h3 class="tagline">The best in town</h3>
@@ -277,9 +201,6 @@
               </div>
             </div>
           </div>
-          <!-- End of Borritos -->
-
-          <!-- Mexican food -->
           <div class="menu col-md-6">
             <h1 class="title">Tacos</h1>
             <h3 class="tagline">Three amigos</h3>
@@ -408,130 +329,6 @@
             </div>
           </div>
           <div class="menu col-md-6">
-            <h1 class="title">Nachos</h1>
-            <br />
-            <div class="row">
-              <div class="col-md-5">
-                <div class="option">
-                  <span
-                    class="img img-responsive food-choice"
-                    id="chicken"
-                  ></span>
-                  <div class="extra-price"><span class="num">217</span>ETB</div>
-                </div>
-                <div class="option">
-                  <span class="img img-responsive food-choice" id="vegi"></span>
-                  <div class="extra-price"><span class="num">195</span>ETB</div>
-                </div>
-                <div class="option">
-                  <span class="img img-responsive food-choice" id="beef"></span>
-                  <div class="extra-price"><span class="num">208</span>ETB</div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <p class="desc">
-                  Your choice of protein with tortilla chips, mix cheese,
-                  guacamole, pico de gallo and our special opium sauce.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End of Mexican food -->
-
-          <!-- Pizzas -->
-          <div class="menu col-md-6">
-            <h1 class="title">Margherita pizza</h1>
-            <br />
-            <div class="row">
-              <div class="col-md-5">
-                <div class="option">
-                  <div class="extra-price"><span class="num">239</span>ETB</div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <p class="desc">
-                  Cheese, Tomato Sauce, Basil
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="menu col-md-6">
-            <h1 class="title">BBQ chicken pizza</h1>
-            <br />
-            <div class="row">
-              <div class="col-md-5">
-                <div class="option">
-                  <div class="extra-price"><span class="num">287</span>ETB</div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <p class="desc">
-                  Cheese, BBQ, Tomato Sauce, Herbs
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="menu col-md-6">
-            <h1 class="title">Spicy Chicken pizza</h1>
-            <br />
-            <div class="row">
-              <div class="col-md-5">
-                <div class="option">
-                  <div class="extra-price"><span class="num">287</span>ETB</div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <p class="desc">
-                  Cheese, Tomato Sauce, Hot Sauce
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="menu col-md-6">
-            <h1 class="title">Vegetarian pizza</h1>
-            <br />
-            <div class="row">
-              <div class="col-md-5">
-                <div class="option">
-                  <span class="img img-responsive food-choice" id="vegi"></span>
-                  <div class="extra-price"><span class="num">261</span>ETB</div>
-                </div>
-              </div>
-              <div class="col-md-12"></div>
-            </div>
-          </div>
-          <div class="menu col-md-6">
-            <h1 class="title">Mexican pizza</h1>
-            <br />
-            <div class="row">
-              <div class="col-md-5">
-                <div class="option">
-                  <div class="extra-price"><span class="num">287</span>ETB</div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <p class="desc">Cheese, Tomato Sauce, Beef, Pico</p>
-              </div>
-            </div>
-          </div>
-          <div class="menu col-md-6">
-            <h1 class="title">Pesto Chicken Pizza</h1>
-            <br />
-            <div class="row">
-              <div class="col-md-5">
-                <div class="option">
-                  <div class="extra-price"><span class="num">287</span>ETB</div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <p class="desc">Basil Pesto, Tomato Sauce, Cheese</p>
-              </div>
-            </div>
-          </div>
-          <!-- End of pizzas -->
-
-          <!-- Burgers -->
-          <div class="menu col-md-6">
             <h1 class="title">Cheese Burger</h1>
             <h3 class="tagline">Extra cheesy</h3>
             <br />
@@ -568,9 +365,6 @@
               </div>
             </div>
           </div>
-          <!-- End of Burgers -->
-
-          <!-- Sandwiches -->
           <div class="menu col-md-6">
             <h1 class="title">Buffalo Chicken Sandwich</h1>
             <h3 class="tagline">Spice it up</h3>
@@ -615,81 +409,14 @@
               </div>
               <div class="col-md-12">
                 <p class="desc">
-                  Our philly cheese steak sandwich comes with sauteed onions &
-                  bell Pepper, shredded gouda cheese, spread. Served with a side
-                  of roasted potatoes.
+                  Our buffalo chicken sandwich comes with sliced roasted
+                  chicken, cheese, thick ranch dressing, and hot sauce all
+                  staked on top of our hand crafted bun. Served with friend
+                  fries.
                 </p>
               </div>
             </div>
           </div>
-          <div class="menu col-md-6">
-            <h1 class="title">Fried Chicken Sandwich</h1>
-            <h3 class="tagline">Spice it up</h3>
-            <br />
-            <div class="row">
-              <div class="col-md-5">
-                <div class="option">
-                  <span
-                    class="img img-responsive food-choice"
-                    id="chicken"
-                  ></span>
-                  <div class="extra-price"><span class="num">239</span>ETB</div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <p class="desc">
-                  Our fried chicken sandwich comes with crispy fried chicken,
-                  tomato. Served with a side of roasted potatoes.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="menu col-md-6">
-            <h1 class="title">Pesto Chicken sandwich</h1>
-            <h3 class="tagline">Spice it up</h3>
-            <br />
-            <div class="row">
-              <div class="col-md-5">
-                <div class="option">
-                  <span
-                    class="img img-responsive food-choice"
-                    id="chicken"
-                  ></span>
-                  <div class="extra-price"><span class="num">239</span>ETB</div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <p class="desc">
-                  Our pesto chicken sandwich comes with basil pesto, cheese,
-                  tomato. Served with a side of roasted potatoes.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="menu col-md-6">
-            <h1 class="title">BBQ ranch chicken sandwich</h1>
-            <h3 class="tagline">Spice it up</h3>
-            <br />
-            <div class="row">
-              <div class="col-md-5">
-                <div class="option">
-                  <span
-                    class="img img-responsive food-choice"
-                    id="chicken"
-                  ></span>
-                  <div class="extra-price"><span class="num">239</span>ETB</div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <p class="desc">
-                  Our BBQ ranch chicken sandwich comes with cheese, chicken, BBQ
-                  ranch dressing. Served with a side of roasted potatoes.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End of sandwiches -->
-
           <div class="menu col-md-6">
             <h1 class="title">Sauces</h1>
             <h3 class="tagline">Extra Saucy</h3>
@@ -779,6 +506,15 @@
                 <img class="beverage-image" src="./images/water.png" />
                 <div class="beverage-price">
                   <span class="beverage-price-num">15</span><br /><span
+                    class="beverage-price-curr"
+                    >ETB</span
+                  >
+                </div>
+              </li>
+              <li class="beverage">
+                <img class="beverage-image" src="./images/corona-extra.png" />
+                <div class="beverage-price">
+                  <span class="beverage-price-num">52</span><br /><span
                     class="beverage-price-curr"
                     >ETB</span
                   >
@@ -877,7 +613,7 @@
               </p>
             </a>
             <p class="copyright">
-              &copy; 2020 Opium Restaurant, All Rights Reserved.
+              &copy; 2019 Opium Restaurant, All Rights Reserved.
             </p>
           </div>
         </div>
